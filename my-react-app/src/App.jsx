@@ -2,7 +2,8 @@ import { useState } from 'react'
 import Header from './pages/Header'
 import Main from './components/Hero/main'
 import Card from './components/Card'
-import typoGraph from './components/typoGraph'
+import TypoGraph from './components/typoGraph'
+import Sponsor from './components/Sponsor'
 
 function App() {
   
@@ -10,7 +11,8 @@ function App() {
     <>
       <Main />
       <Card />
-      <typoGraph />
+      <TypoGraph />
+      <Sponsor />
     </>
   )
 }

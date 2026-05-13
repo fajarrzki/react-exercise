@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='bg-[#043873] w-full relative overflow-hidden'>
       {/* Background Element */}
       <img 
-        src={heroElement  } 
+        src={heroElement} 
         alt="Hero background decoration" 
         className="absolute object-cover opacity-20 w-full h-full top-0 left-0"
       />
