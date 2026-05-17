@@ -26,12 +26,12 @@ const NavBar = () => {
 
   return (
      <div
-      className="
-        w-full sticky top-0 left-0 z-50"
+      className={`
+        w-full sticky top-0 left-0 z-50 bg-[#043873] transition-all duration-1200 ease-in-out ${showNavbar ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}
 
-    >
+    `}>
       <div className={`bg-[#043873]
-        max-w-7xl mx-auto flex items-center justify-between py-4 px-6 lg:px-10 relative  transition-all duration-1200 ease-in-out
+        max-w-7xl flex items-center justify-between py-4 px-6 lg:px-10 relative  transition-all duration-1200 ease-in-out
         ${showNavbar ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}
       `}>
 

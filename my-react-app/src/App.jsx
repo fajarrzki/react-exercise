@@ -1,19 +1,29 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './pages/Header'
 import Main from './components/Hero/main'
 import Card from './components/Card'
 import TypoGraph from './components/typoGraph'
 import Sponsor from './components/Sponsor'
+import RecruitmentBoard from './pages/RecruitmentBoard'
 
 function App() {
-  
   return (
-    <>
-      <Main />
-      <Card />
-      <TypoGraph />
-      <Sponsor />
-    </>
+    <Router>
+      <Routes>
+        <Route 
+          path="/" 
+          element={
+            <>
+              <Main />
+              <Card />
+              <TypoGraph />
+              <Sponsor />
+            </>
+          } 
+        />
+        <Route path="/recruitment" element={<RecruitmentBoard />} />
+      </Routes>
+    </Router>
   )
 }
 

@@ -1,7 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import heroElement from '../assets/hero-element.png'
 
 const Hero = () => {
+  const navigate = useNavigate()
+
+  const handleScheduleClick = () => {
+    navigate('/recruitment')
+  }
+
   return (
     <div className='bg-[#043873] w-full relative overflow-hidden'>
       {/* Background Element */}
@@ -21,8 +28,10 @@ const Hero = () => {
             <p className="text-white text-md leading-relaxed opacity-90">
               Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
             </p>
-            <button className="bg-[#4F9CF9] text-white font-semibold py-3 px-8 rounded-lg hover:bg-blue-600 hover:scale-105 transition duration-300 w-fit">
-              Try Whitepace free
+            <button 
+              onClick={handleScheduleClick}
+              className="bg-[#4F9CF9] text-white font-semibold py-3 px-8 rounded-lg hover:bg-blue-600 hover:scale-105 transition duration-300 w-fit">
+              Manage Candidates Schedule Psychotest →
             </button>
           </div>
 
